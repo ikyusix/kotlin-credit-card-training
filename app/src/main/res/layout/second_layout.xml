@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDADA">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="359dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="444dp" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="202dp"
+        android:layout_height="266dp"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignBottom="@+id/view"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/card" />
+
+    <TextView
+        android:id="@+id/number_card"
+        android:layout_width="263dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignBottom="@+id/view"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/numCard"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_card"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/name_card"
+        android:text="@string/valDate"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/name_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/number_card"
+        android:layout_alignTop="@+id/number_card"
+        android:layout_alignBottom="@+id/mastercard_logo"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/yName"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/bank_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/number_card"
+        android:layout_alignTop="@+id/view"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/bank_logo" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/bank_logo"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lion"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/chip_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bank_logo"
+        android:layout_alignStart="@+id/number_card"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/chip" />
+
+    <ImageView
+        android:id="@+id/visa_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignBottom="@+id/view"
+        android:layout_marginStart="303dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        app:srcCompat="@drawable/visa_logo" />
+
+    <ImageView
+        android:id="@+id/mastercard_logo"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/number_card"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/valid"
+        app:srcCompat="@drawable/mastercard" />
+
+    <TextView
+        android:id="@+id/valid_thru"
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/valid"
+        android:layout_alignEnd="@+id/valid"
+        android:layout_alignBottom="@+id/valid"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="2dp"
+        android:lineSpacingExtra="0dp"
+        android:text="@string/valid"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="5dp" />
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:minHeight="200dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/yName"-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+</RelativeLayout>

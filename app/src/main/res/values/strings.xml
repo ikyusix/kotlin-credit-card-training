@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">taskOnee</string>
+    <string name="yName">Your Name</string>
+    <string name="nCard">Number Card</string>
+    <string name="checkCard">CHECKOUT</string>
+    <string name="numCard">7638 8273 2736 2827</string>
+    <string name="valDate">12/25</string>
+    <string name="lion">BANK LOGO</string>
+    <string name="valid">VALID THRU</string>
+</resources>
